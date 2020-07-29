@@ -5,8 +5,8 @@ import {
   Route
 } from 'react-router-dom';
 
-import HomeContainer from '../containers/HomeContainer';
-import CharacterDetail from '../containers/DetailContainer';
+import HomeContainer from '../../containers/HomeContainer';
+import DetailContainer from '../../containers/DetailContainer';
 
 
 export default function App() {
@@ -15,7 +15,7 @@ export default function App() {
     <h1>Avatar the Last Airbender</h1>
     <Switch>
       <Route exact path='/' component={HomeContainer}/>
-      <Route path='/:name' component={CharacterDetail}/>
+      <Route path='/:name' component={DetailContainer}/>
     </Switch>
   </Router>
   )
